@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: IranSans;
+  src: url(./assets/fonts/IRANSans.ttf); /* url of the font */
+  font-weight: normal;
+}
+@font-face {
+  font-family: IranSans;
+  src: url(./assets/fonts/IRANSans_bold.ttf); /* url of the font */
+  font-weight: bold;
+}
+
+body {
+  font-family: IranSans;
+  font-size: 14px;
+  direction: rtl;
+  text-align: right;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+.title-border-right {
+  position: relative;
+  white-space: nowrap;
+  line-height: 45px;
+}
+
+.title-border-right::before {
+  width: 6px;
+  height: 50px;
+  background-color: black;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -13px;
+}
+
+.right-bullet {
+  position: relative;
+}
+
+.right-bullet::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 100%;
+  position: absolute;
+  right: -15px;
+  top: calc(50% - 4px);
+}
+
+.bottom-border {
+  position: relative;
+}
+.bottom-border::after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 101px;
+  background-color: #ececec33;
+  position: absolute;
+  bottom: -12px;
+  right: -4px;
+}
